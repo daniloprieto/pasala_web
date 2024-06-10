@@ -1,0 +1,90 @@
+#carousel-container {
+    margin-top: 5%;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#carousel-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carousel-item {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-item iframe {
+    width: 100%;
+    height: 200px;
+}
+
+
+#news-container {
+    margin-top: 5%;
+}
+/* Quitar viñetas y alinear texto a la izquierda */
+#news-list {
+    list-style-type: none;
+    padding: 5%;
+}
+
+/* Estilos para cada noticia */
+.news-item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilos para la imagen de la noticia */
+.news-image {
+    width: 100%;
+    height: auto;
+    margin-right: 5%;
+    min-width: 200px;
+    max-height: 120px;
+}
+
+/* Estilos para el título de la noticia */
+.news-title > a {
+    width: 100%;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: left;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    flex: 1;
+}
+
+@media (min-width: 768px) {
+    .news-image {
+        width: 30%;
+        margin-right: 5%;
+    }
+
+    .news-title {
+        width: 65%; /* 100% - 40% - 5% (margen) */
+    }
+}
+
+#banner{
+    width:85%;
+}

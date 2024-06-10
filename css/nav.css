@@ -1,0 +1,120 @@
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Estilos para el menú de navegación */
+nav {
+    background-color: #333; /* Fondo del nav */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #555; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilos para el botón de reproducción de audio */
+#playButton {
+    background-color: #ff0000; /* Rojo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#playButton:hover {
+    background-color: #cc0000; /* Rojo oscuro al pasar el mouse */
+}
+
+#playButton i {
+    margin-right: 5px;
+}
+
+
+/*//////// nuevo nav
+
+/* Estilos para el menú de navegación */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center; /* Centrar los elementos en pantallas pequeñas */
+}
+
+nav li {
+    display: inline-block; /* Mostrar elementos en línea */
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #555; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilos para el botón de menú desplegable */
+.menu-icon {
+    display: none; /* Ocultar por defecto en pantallas grandes */
+}
+
+/* Media query para pantallas móviles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: none; /* Ocultar la lista de navegación principal */
+    }
+
+    .menu-icon {
+        display: block; /* Mostrar el botón de menú desplegable */
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        cursor: pointer;
+    }
+
+    .menu-icon:hover {
+        background-color: #555; /* Cambiar color de fondo al pasar el mouse */
+    }
+
+    .show {
+        display: block; /* Mostrar la lista de navegación al hacer clic en el botón de menú */
+    }
+}

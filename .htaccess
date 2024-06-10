@@ -1,0 +1,3 @@
+<FilesMatch \.p(hp|hp5|hp7|html)$>
+    SetHandler proxy:unix:/opt/php7-4/var/run/php-fpm/c1612173.sock|fcgi://c1612173
+</FilesMatch>

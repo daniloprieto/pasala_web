@@ -1,0 +1,102 @@
+@import url('/css/nav.css');
+@import url('/css/footer.css');
+@import url('/css/publicidad.css');
+@import url('/css/inicio.css');
+@import url('/css/videos.css');
+@import url('/css/agencia.css');
+@import url('/css/donaciones.css');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+
+.wrapper {
+    width: 100%;
+    /* max-width: 1200px; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+main {
+    flex: 1;
+    text-align: center;
+}
+
+.logo-container {
+    max-width: 70%;
+    display: inline-block;
+    padding: 20px 40px;
+    background: linear-gradient(45deg, #8b0980, #072a7d); /* Gradiente naranja a rosa */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    animation: rotate-bg 5s linear infinite; /* Animación de rotación del fondo */
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif; /* Fuente sans-serif elegante */
+    font-size: 30px; /* Tamaño de la fuente grande */
+    color: #fff; /* Color de texto blanco */
+    font-weight: 800; /* Texto muy en negrita */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 8px; /* Espaciado entre letras */
+    position: relative;
+    animation: text-flicker 2s infinite; /* Animación de parpadeo del texto */
+}
+
+@keyframes rotate-bg {
+    0% {
+        background: linear-gradient(45deg, #8b0980, #072a7d);
+    }
+    50% {
+        background: linear-gradient(45deg, #072a7d, #8b0980);
+    }
+    100% {
+        background: linear-gradient(45deg, #8b0980, #072a7d);
+    }
+}
+
+/* Media query para pantallas móviles */
+@media (max-width: 768px) {
+    .logo-container {
+        max-width: 70%;
+        display: inline-block;
+        padding: 10px 20px;
+        background: linear-gradient(45deg, #8b0980, #072a7d); /* Gradiente naranja a rosa */
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        animation: rotate-bg 5s linear infinite; /* Animación de rotación del fondo */
+    }
+    
+    .logo {
+        font-family: 'Montserrat', sans-serif; /* Fuente sans-serif elegante */
+        font-size: 20px; /* Tamaño de la fuente grande */
+        color: #fff; /* Color de texto blanco */
+        font-weight: 800; /* Texto muy en negrita */
+        text-transform: uppercase; /* Texto en mayúsculas */
+        letter-spacing: 8px; /* Espaciado entre letras */
+        position: relative;
+        animation: text-flicker 2s infinite; /* Animación de parpadeo del texto */
+    }
+
+}

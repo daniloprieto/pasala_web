@@ -1,0 +1,49 @@
+
+.ads {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.ads h2 {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.ads p {
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+
+.ads {
+    max-width: 100%; /* Para asegurarse de que el contenedor no sea más ancho que su contenedor principal */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se extienda más allá del contenedor */
+}
+
+.ads img {
+    max-width: 100%; /* Para asegurar que la imagen no sea más ancha que su contenedor */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    display: block; /* Para evitar cualquier espacio adicional debajo de la imagen */
+    margin-bottom: 10%;
+}
+
+/* Estilos generales */
+.desktop-only {
+    background-color: #b7b7b745;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    margin-top:-1%;
+}
+
+
+/* Media query para pantallas móviles */
+@media (max-width: 768px) {
+    .desktop-only {
+        display: none;
+        height: auto;
+    }
+}

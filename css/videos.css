@@ -1,0 +1,21 @@
+
+.video-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.video-item {
+    flex: 1 1 calc(33.333% - 20px); /* Ajusta el tamaño del elemento */
+    box-sizing: border-box;
+}
+
+.video-item h3 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.video-item iframe {
+    width: 80%;
+    height: 300px; /* Puedes ajustar la altura según sea necesario */
+}

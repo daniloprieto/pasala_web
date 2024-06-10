@@ -1,0 +1,62 @@
+/* donaciones.css */
+
+/* Estilos específicos para donaciones.html */
+.donaciones-content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center; /* Alineación del contenido al centro */
+}
+
+.donaciones-content .logo-container {
+    margin-bottom: 20px;
+}
+
+.donaciones-content .logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.donaciones-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.donaciones-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.donaciones-content ul li {
+    background-color: #f4f4f4;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .donaciones-content {
+        padding: 10px;
+    }
+
+    .donaciones-content .logo {
+        font-size: 1.5em;
+    }
+
+    .donaciones-content p, .donaciones-content ul li {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .donaciones-content .logo {
+        font-size: 1.2em;
+    }
+
+    .donaciones-content p, .donaciones-content ul li {
+        font-size: 0.9em;
+    }
+}

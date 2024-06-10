@@ -1,0 +1,62 @@
+/* agencia.css */
+
+/* Estilos específicos para agencia.html */
+.agencia-content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center; /* Alineación del contenido al centro */
+}
+
+.agencia-content .logo-container {
+    margin-bottom: 20px;
+}
+
+.agencia-content .logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.agencia-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.agencia-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.agencia-content ul li {
+    background-color: #f4f4f4;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .agencia-content {
+        padding: 10px;
+    }
+
+    .agencia-content .logo {
+        font-size: 1.5em;
+    }
+
+    .agencia-content p, .agencia-content ul li {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .agencia-content .logo {
+        font-size: 1.2em;
+    }
+
+    .agencia-content p, .agencia-content ul li {
+        font-size: 0.9em;
+    }
+}
